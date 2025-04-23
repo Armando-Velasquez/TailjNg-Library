@@ -1,51 +1,51 @@
 <section class="w-full h-full flex items-center justify-center p-4 bg-white dark:bg-foreground">
   <div class="grid grid-cols-3 gap-2">
 
-      <div class="flex flex-col gap-2">
-        <h1 class="font-bold text-center text-black dark:text-white text-xl">Formulario</h1>
-    
-        <JLabel [isRequired]="true">Es un label</JLabel>  
-    
-        <JInput type="text" placeholder="Input text" />
-        <JInput type="textarea" placeholder="Input textarea" />
-        <JInput type="date" placeholder="Input date" />
-        <JInput type="datetime-local" placeholder="Input datetime" />
-        <JInput type="email" placeholder="Input email" />
-        <JInput type="file" [clearButton]="true" [showImage]="true" placeholder="Input file" />
-        <JInput type="number" placeholder="Input number" />
-        <JInput type="password" placeholder="Input password" />
-        <JInput type="range" placeholder="Input range" />
-
-        <JCheckbox [isChecked]="true" text="Checkbox" />
-        <JCheckbox onKeyPress type="switch" [isChecked]="checked" (click)="checked = !checked"  text="Checkbox" />
-    
-        <JButton [icon]="icons.ruler" classes="secondary w-full" jTooltip="Esto es un tooltip" text="hola"> xd </JButton>
-      </div>
-
-      <JModeToggle />
-    </div>
-    
     <div class="flex flex-col gap-2">
-      <h1 class="font-bold text-center text-black dark:text-white text-xl">Dialog</h1>
-      
-      <JButton [icon]="icons.ruler" classes="primary w-full" (clicked)="isDialogOpen = !isDialogOpen"> Abrir dialog </JButton>
+      <h1 class="font-bold text-center text-black dark:text-white text-xl">Formulario</h1>
 
-      <JDialog 
-        [openModal]="isDialogOpen"
-        (closeModal)="isDialogOpen = false"
-        title="Dialog title"
-        [dialogTemplate]="templateDialog" 
-        position="center"
-        [draggable]="true"
-        [overlay]="false"
-      />
+      <JLabel [isRequired]="true">Es un label</JLabel>
 
-      <ng-template #templateDialog>
-        <div class="m-0 pt-1">
-          Dialog
-        </div>
-      </ng-template> 
+      <JInput type="text" placeholder="Input text" />
+      <JInput type="textarea" placeholder="Input textarea" />
+      <JInput type="date" placeholder="Input date" />
+      <JInput type="datetime-local" placeholder="Input datetime" />
+      <JInput type="email" placeholder="Input email" />
+      <JInput type="file" [clearButton]="true" [showImage]="true" placeholder="Input file" />
+      <JInput type="number" placeholder="Input number" />
+      <JInput type="password" placeholder="Input password" />
+      <JInput type="range" placeholder="Input range" />
 
+      <JCheckbox [isChecked]="true" text="Checkbox" />
+      <JCheckbox onKeyPress type="switch" [isChecked]="checked" (click)="checked = !checked" text="Checkbox" />
 
+      <JButton [icon]="icons.ruler" classes="secondary w-full" jTooltip="Esto es un tooltip" text="hola"> xd </JButton>
     </div>
-  </section>
+
+    <JModeToggle />
+  </div>
+
+  <div class="flex flex-col gap-2">
+    <h1 class="font-bold text-center text-black dark:text-white text-xl">Dialog</h1>
+
+    <JButton [icon]="icons.ruler" classes="primary w-full" (clicked)="isDialogOpen = !isDialogOpen"> Abrir dialog
+    </JButton>
+
+    <JDialog [openModal]="isDialogOpen" (closeModal)="isDialogOpen = false" title="Dialog title"
+      [dialogTemplate]="templateDialog" position="center" [draggable]="true" [overlay]="false" />
+
+    <ng-template #templateDialog>
+      <div class="m-0 pt-1">
+        Dialog
+      </div>
+    </ng-template>
+
+    <JButton classes="primary" [icon]="icons.ruler" (clicked)="openToast()">Abrir toast </JButton>
+    <JButton classes="primary" [icon]="icons.ruler" (clicked)="openDialog()">Abrir dialog </JButton>
+
+  </div>
+</section>
+
+
+<JAlertToast></JAlertToast>
+<JAlertDialog></JAlertDialog>

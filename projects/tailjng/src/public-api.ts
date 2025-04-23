@@ -34,3 +34,11 @@ export * from './lib/button/button.component';
 
 // Dialog
 export * from './lib/dialog/dialog.component';
+
+// Alert Toast
+export * from './lib/alert-toast/elements/alert-toast.service';
+export * from './lib/alert-toast/alert-toast.component';
+
+// Alert Dialog
+export * from './lib/alert-dialog/elements/alert-dialog.service';
+export * from './lib/alert-dialog/alert-dialog.component';
