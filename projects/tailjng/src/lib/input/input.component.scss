@@ -1,0 +1,70 @@
+
+// Input
+.input {
+
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+        transition: opacity 0.2s ease;
+      }
+
+    &:-webkit-autofill {
+        -webkit-text-fill-color: black !important;
+        -webkit-box-shadow: 0 0 0px 1000px color-mix(in srgb, var(--color-primary) 15%, white) inset !important;
+        caret-color: var(--color-primary) !important;
+    }
+    
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-text-fill-color: black !important;
+        -webkit-box-shadow: 0 0 0px 1000px color-mix(in srgb, var(--color-primary) 15%, white) inset !important;
+        caret-color: var(--color-primary) !important;
+    }
+
+    &[type="date"]::-webkit-calendar-picker-indicator,
+    &[type="datetime-local"]::-webkit-calendar-picker-indicator {
+        filter: none !important;
+        opacity: 1 !important;
+        color: black !important;
+        background-color: transparent !important;
+        -webkit-filter: brightness(0) invert(0) !important;
+    }
+
+}
+
+.dark {
+    .input {
+    
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+          }
+
+        &:-webkit-autofill {
+            -webkit-text-fill-color: white !important;
+            -webkit-box-shadow: 0 0 0px 1000px color-mix(in srgb, var(--color-background) 15%, black) inset !important;
+            caret-color: var(--color-dark-primary) !important;
+        }
+
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            -webkit-text-fill-color: white !important;
+            -webkit-box-shadow: 0 0 0px 1000px color-mix(in srgb, var(--color-background) 15%, black) inset !important;
+            caret-color: var(--color-primary) !important;
+        }
+
+        &[type="date"]::-webkit-calendar-picker-indicator,
+        &[type="datetime-local"]::-webkit-calendar-picker-indicator {
+        filter: none !important;
+            opacity: 1 !important;
+            color: white !important;
+            background-color: transparent !important;
+            -webkit-filter: brightness(0) invert(1) !important;
+        }
+    }
+}
+
+
+
+
+

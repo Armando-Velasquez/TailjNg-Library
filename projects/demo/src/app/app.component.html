@@ -1,0 +1,25 @@
+<section class="w-full h-full flex items-center justify-center p-4 bg-white dark:bg-foreground">
+  <div class="grid grid-cols-3 gap-2">
+
+      <div class="flex flex-col gap-2">
+        <h1 class="font-bold text-center text-black dark:text-white text-xl">Formulario</h1>
+    
+        <JLabel [isRequired]="true">Es un label</JLabel>  
+    
+        <JInput type="text" placeholder="Input text" />
+        <JInput type="textarea" placeholder="Input textarea" />
+        <JInput type="date" placeholder="Input date" />
+        <JInput type="datetime-local" placeholder="Input datetime" />
+        <JInput type="email" placeholder="Input email" />
+        <JInput type="file" [clearButton]="true" [showImage]="true" placeholder="Input file" />
+        <JInput type="number" placeholder="Input number" />
+        <JInput type="password" placeholder="Input password" />
+        <JInput type="range" placeholder="Input range" />
+    
+        <JButton [icon]="icons.ruler" classes="secondary w-full" jTooltip="Esto es un tooltip" text="hola"> xd </JButton>
+      </div>
+
+      <JModeToggle />
+    </div>
+
+  </section>

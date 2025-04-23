@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+html, body {
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; // evita desplazamiento lateral
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+  --color-background: #e9fbf6;
+  --color-foreground: #181a1b;
+  --color-card: #e0ebe8;
+  --color-card-foreground: #113b30;
+  --color-popover: #f0f4f3;
+  --color-popover-foreground: #061e18;
+  --color-primary: #27a584;
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: #aed1c7;
+  --color-secondary-foreground: #000000;
+  --color-muted: #d6dbda;
+  --color-muted-foreground: #438976;
+  --color-accent: #ced4d3;
+  --color-accent-foreground: #113b30;
+  --color-destructive: #BF3F3F;
+  --color-destructive-foreground: #f0f4f3;
+  --color-border: #76bca9;
+  --color-input: #76bca9;
+  --color-ring: #27a584;
+
+  --color-dark-background: #121b1d;
+  --color-dark-foreground: #e2e9e7;
+  --color-dark-card: #09201a;
+  --color-dark-card-foreground: #e2e9e7;
+  --color-dark-popover: #030c0a;
+  --color-dark-popover-foreground: #e2e9e7;
+  --color-dark-primary: #256a57;
+  --color-dark-primary-foreground: #FFFFFF;
+  --color-dark-secondary: #1e483d;
+  --color-dark-secondary-foreground: #FFFFFF;
+  --color-dark-muted: #334d46;
+  --color-dark-muted-foreground: #8ba7a0;
+  --color-dark-accent: #334d46;
+  --color-dark-accent-foreground: #e2e9e7;
+  --color-dark-destructive: #BF3F3F;
+  --color-dark-destructive-foreground: #e2e9e7;
+  --color-dark-border: #4b9a85;
+  --color-dark-input: #4b9a85;
+  --color-dark-ring: #256a57;
+  --color-radius: 0.5rem;
+  --color-dark-radius: 0.5rem;
+}
+
+.dark {
+  --tw-bg-opacity: 1;
+  background-color: rgba(18, 18, 18, var(--tw-bg-opacity));
+  color: var(--white);
+}
+
+// Scroll
+.scroll-element {
+    padding-right: 5px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: var(--color-primary);
+      transition: 0.5s;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--color-dark-primary);
+    }
+    
+    &::-webkit-scrollbar-button {
+      width: 0px;
+      height: 0px;
+    }
+}
+
