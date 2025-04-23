@@ -11,8 +11,8 @@
  * Public API Surface of tailjng
  */
 
-export * from './lib/tailjng.service';
-export * from './lib/tailjng.component';
+// export * from './lib/tailjng.service';
+// export * from './lib/tailjng.component';
 
 // Mode Toggle
 export * from './lib/mode-toggle/mode-toggle.component';
@@ -26,5 +26,9 @@ export * from './lib/label/label.component';
 // Input
 export * from './lib/input/input.component';
 
+// Checkbox
+export * from './lib/checkbox/checkbox.component';
+
 // Button
 export * from './lib/button/button.component';
+

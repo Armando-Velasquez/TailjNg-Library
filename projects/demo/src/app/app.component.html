@@ -15,6 +15,9 @@
         <JInput type="number" placeholder="Input number" />
         <JInput type="password" placeholder="Input password" />
         <JInput type="range" placeholder="Input range" />
+
+        <JCheckbox [isChecked]="true" text="Checkbox" />
+        <JCheckbox onKeyPress type="switch" [isChecked]="checked" (click)="checked = !checked"  text="Checkbox" />
     
         <JButton [icon]="icons.ruler" classes="secondary w-full" jTooltip="Esto es un tooltip" text="hola"> xd </JButton>
       </div>
