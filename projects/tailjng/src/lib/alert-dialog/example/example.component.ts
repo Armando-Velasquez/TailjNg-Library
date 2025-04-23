@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertDialogService } from '../elements/alert-dialog.service';
+import { JAlertDialogService } from '../elements/alert-dialog.service';
 import { JButtonComponent } from '../../button/button.component';
 
 @Component({
@@ -10,7 +10,7 @@ import { JButtonComponent } from '../../button/button.component';
 })
 export class AlertDialogExampleComponent {
 
-  constructor(private readonly alertDialogService: AlertDialogService) { }
+  constructor(private readonly alertDialogService: JAlertDialogService) { }
 
   // Success
   openAlertSuccess() {

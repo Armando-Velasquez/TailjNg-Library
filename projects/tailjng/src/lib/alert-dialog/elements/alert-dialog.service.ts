@@ -7,7 +7,7 @@ type ActionCallback = () => void | Promise<void> | Observable<any>;
 @Injectable({
   providedIn: "root",
 })
-export class AlertDialogService {
+export class JAlertDialogService {
   private readonly isOpenSignal: WritableSignal<boolean> = signal(false);
   private readonly configSignal: WritableSignal<AlertDialogProps | null> = signal(null);
 

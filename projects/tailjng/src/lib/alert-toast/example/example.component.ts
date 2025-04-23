@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertToastService } from '../elements/alert-toast.service';
+import { JAlertToastService } from '../elements/alert-toast.service';
 import { JButtonComponent } from '../../button/button.component';
 
 @Component({
@@ -10,7 +10,7 @@ import { JButtonComponent } from '../../button/button.component';
 })
 export class AlertToastExampleComponent {
 
-  constructor(private readonly alertToastService: AlertToastService) { }
+  constructor(private readonly alertToastService: JAlertToastService) { }
 
   // Success with auto-close (default behavior)
   openAlertSuccess() {

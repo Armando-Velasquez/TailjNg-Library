@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Ruler } from 'lucide-angular';
-import { JModeToggleComponent, JTooltipModule, JLabelComponent, JInputComponent, JCheckboxComponent, JButtonComponent, JDialogComponent, AlertToastService, JAlertToastComponent, AlertDialogService, JAlertDialogComponent } from 'tailjng';
+import { JModeToggleComponent, JTooltipModule, JLabelComponent, JInputComponent, JCheckboxComponent, JButtonComponent, JDialogComponent, JAlertToastComponent, JAlertDialogComponent, JAlertToastService, JAlertDialogService } from 'tailjng';
 
 @Component({
   selector: 'app-root',
@@ -20,8 +20,8 @@ export class AppComponent {
   isDialogOpen = false;
 
   constructor(
-    private readonly alertToastService: AlertToastService,
-    private readonly alertDialogService: AlertDialogService,
+    private readonly alertToastService: JAlertToastService,
+    private readonly alertDialogService: JAlertDialogService,
   ) { }
 
 

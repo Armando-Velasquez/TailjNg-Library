@@ -4,7 +4,7 @@ import { AlertToastProps, Toast } from "./alert-toast.interface";
 @Injectable({
     providedIn: "root",
 })
-export class AlertToastService {
+export class JAlertToastService {
     private readonly toastsSignal: WritableSignal<Toast[]> = signal([]);
     private readonly autoCloseTimers: Map<string, any> = new Map();
 

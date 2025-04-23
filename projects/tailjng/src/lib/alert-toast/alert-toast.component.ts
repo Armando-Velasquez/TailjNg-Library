@@ -3,7 +3,7 @@ import { trigger, transition, style, animate } from "@angular/animations";
 import { NgClass } from '@angular/common';
 import { CircleCheck, CircleHelp, CircleX, Info, Loader2, LucideAngularModule, TriangleAlert, X } from 'lucide-angular';
 import { JButtonComponent } from '../button/button.component';
-import { AlertToastService } from './elements/alert-toast.service';
+import { JAlertToastService } from './elements/alert-toast.service';
 import { JColorsService } from '../colors/colors.service';
 
 @Component({
@@ -28,7 +28,7 @@ export class JAlertToastComponent {
   @Input() monocromatic: boolean = false;
   @Input() position: 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left' = 'bottom-right';
 
-  private readonly alertToastService = inject(AlertToastService);
+  private readonly alertToastService = inject(JAlertToastService);
 
   constructor(private readonly colorsService: JColorsService) { }
 

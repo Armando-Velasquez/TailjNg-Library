@@ -3,7 +3,7 @@ import { trigger, transition, style, animate } from "@angular/animations";
 import { LucideAngularModule, CircleCheck, CircleX, TriangleAlert, Info, CircleHelp, Loader2, } from "lucide-angular";
 import { NgClass } from "@angular/common";
 import { JButtonComponent } from "../button/button.component";
-import { AlertDialogService } from "./elements/alert-dialog.service";
+import { JAlertDialogService } from "./elements/alert-dialog.service";
 import { JColorsService } from "../colors/colors.service";
 
 @Component({
@@ -26,7 +26,7 @@ import { JColorsService } from "../colors/colors.service";
 export class JAlertDialogComponent {
 
   @Input() monocromatic: boolean = false;
-  private readonly alertDialogService = inject(AlertDialogService);
+  private readonly alertDialogService = inject(JAlertDialogService);
 
   constructor(private readonly colorsService: JColorsService) { }
 
