@@ -32,3 +32,5 @@ export * from './lib/checkbox/checkbox.component';
 // Button
 export * from './lib/button/button.component';
 
+// Dialog
+export * from './lib/dialog/dialog.component';

@@ -24,5 +24,28 @@
 
       <JModeToggle />
     </div>
+    
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-center text-black dark:text-white text-xl">Dialog</h1>
+      
+      <JButton [icon]="icons.ruler" classes="primary w-full" (clicked)="isDialogOpen = !isDialogOpen"> Abrir dialog </JButton>
 
+      <JDialog 
+        [openModal]="isDialogOpen"
+        (closeModal)="isDialogOpen = false"
+        title="Dialog title"
+        [dialogTemplate]="templateDialog" 
+        position="center"
+        [draggable]="true"
+        [overlay]="false"
+      />
+
+      <ng-template #templateDialog>
+        <div class="m-0 pt-1">
+          Dialog
+        </div>
+      </ng-template> 
+
+
+    </div>
   </section>
