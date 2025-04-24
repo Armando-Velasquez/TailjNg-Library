@@ -1,7 +1,7 @@
 import { NgClass } from "@angular/common"
 import { Component, Input, Output, EventEmitter, inject } from "@angular/core"
 import { LucideAngularModule, Loader2 } from "lucide-angular"
-import { JColorsService } from "../colors/colors.service"
+import { JColorsService } from "../../colors/colors.service"
 import { JTooltipModule } from "../tooltip/tooltip.directive"
 
 @Component({

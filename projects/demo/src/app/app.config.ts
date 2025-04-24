@@ -11,6 +11,11 @@ import { lucideCross } from '@ng-icons/lucide';
 // Rutas
 import { routes } from './app.routes';
 
+// Crud
+import { API_URL } from 'tailjng';
+import { provideHttpClient } from '@angular/common/http';
+
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
@@ -22,5 +27,8 @@ export const appConfig: ApplicationConfig = {
     CurrencyPipe,
 
     provideIcons({ lucideCross }),
+    
+    provideHttpClient(),
+    { provide: API_URL, useValue: 'http://localhost:3000/api/v1' },
   ]
 };

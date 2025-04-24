@@ -4,7 +4,7 @@ import { NgClass } from '@angular/common';
 import { CircleCheck, CircleHelp, CircleX, Info, Loader2, LucideAngularModule, TriangleAlert, X } from 'lucide-angular';
 import { JButtonComponent } from '../button/button.component';
 import { JAlertToastService } from './elements/alert-toast.service';
-import { JColorsService } from '../colors/colors.service';
+import { JColorsService } from '../../colors/colors.service';
 
 @Component({
   selector: 'JAlertToast',

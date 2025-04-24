@@ -15,30 +15,58 @@
 // export * from './lib/tailjng.component';
 
 // Mode Toggle
-export * from './lib/mode-toggle/mode-toggle.component';
+export * from './lib/components/mode-toggle/mode-toggle.component';
 
 // Tooltip
-export * from './lib/tooltip/tooltip.directive';
+export * from './lib/components/tooltip/tooltip.directive';
 
 // Label
-export * from './lib/label/label.component';
+export * from './lib/components/label/label.component';
 
 // Input
-export * from './lib/input/input.component';
+export * from './lib/components/input/input.component';
 
 // Checkbox
-export * from './lib/checkbox/checkbox.component';
+export * from './lib/components/checkbox/checkbox.component';
 
 // Button
-export * from './lib/button/button.component';
+export * from './lib/components/button/button.component';
 
 // Dialog
-export * from './lib/dialog/dialog.component';
+export * from './lib/shared/dialog.shared';
+export * from './lib/components/dialog/dialog.component';
 
 // Alert Toast
-export * from './lib/alert-toast/elements/alert-toast.service';
-export * from './lib/alert-toast/alert-toast.component';
+export * from './lib/components/alert-toast/elements/alert-toast.service';
+export * from './lib/components/alert-toast/alert-toast.component';
 
 // Alert Dialog
-export * from './lib/alert-dialog/elements/alert-dialog.service';
-export * from './lib/alert-dialog/alert-dialog.component';
+export * from './lib/components/alert-dialog/elements/alert-dialog.service';
+export * from './lib/components/alert-dialog/alert-dialog.component';
+
+// Http
+export * from './lib/http/api-url';
+export * from './lib/http/crud-generic.service';
+export * from './lib/http/http-rest.service';
+export * from './lib/http/http-error.service';
+
+// Select
+export * from './lib/components/select/select.component';
+
+// Toggle Radio
+export * from './lib/components/toggle-radio/toggle-radio.component';
+
+// Theme
+export * from './lib/colors/theme/theme.component';
+
+// Crud
+export * from './lib/components/crud/card-component/card.component';
+
+export * from './lib/components/crud/filter-component/filter.component';
+
+export * from './lib/shared/form.shared';
+export * from './lib/components/crud/form-component/form.component';
+
+export * from './lib/components/crud/paginator-component/paginator.component';
+
+export * from './lib/components/crud/table-component/table.component';

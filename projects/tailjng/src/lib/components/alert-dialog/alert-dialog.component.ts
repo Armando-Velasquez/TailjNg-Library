@@ -4,7 +4,7 @@ import { LucideAngularModule, CircleCheck, CircleX, TriangleAlert, Info, CircleH
 import { NgClass } from "@angular/common";
 import { JButtonComponent } from "../button/button.component";
 import { JAlertDialogService } from "./elements/alert-dialog.service";
-import { JColorsService } from "../colors/colors.service";
+import { JColorsService } from "../../colors/colors.service";
 
 @Component({
   selector: "JAlertDialog",
