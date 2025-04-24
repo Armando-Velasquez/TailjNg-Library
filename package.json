@@ -38,6 +38,7 @@
     "@ng-icons/lucide": ">=29.0.0",
     "@tailwindcss/postcss": "^4.1.4",
     "date-fns": "^4.1.0",
+    "highlight.js": "^11.11.1",
     "lucide-angular": "^0.477.0",
     "ngx-cookie-service": "^19.1.2",
     "postcss": "^8.5.3",

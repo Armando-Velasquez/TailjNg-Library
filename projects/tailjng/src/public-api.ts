@@ -70,3 +70,6 @@ export * from './lib/components/crud/form-component/form.component';
 export * from './lib/components/crud/paginator-component/paginator.component';
 
 export * from './lib/components/crud/table-component/table.component';
+
+// Code block
+export * from './lib/components/code-block/code-block.component';

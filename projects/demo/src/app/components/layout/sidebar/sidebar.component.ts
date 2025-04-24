@@ -113,26 +113,24 @@ export class SidebarComponent implements OnInit {
   initList(): void {
     this.menuList = [
       {
-        icon: this.icons.home,
-        name: 'Getting Started',
-        elements: [
-          {
-            icon: this.icons.package,
-            name: 'Installation',
-            route: this.routes[100],
-
-          },
-          {
-            icon: this.icons.settings,
-            name: 'Configuration',
-            route: this.routes[100],
-          }
-        ],
+        icon: this.icons.package,
+        name: 'Installation',
+        route: this.routes[1],
+      },
+      {
+        icon: this.icons.heart,
+        name: 'Tailwind CSS',
+        route: this.routes[4],
       },
       {
         icon: this.icons.palette,
         name: 'Theming',
         route: this.routes[3],
+      },
+      {
+        icon: this.icons.smilePlus,
+        name: 'Icons',
+        route: this.routes[100],
       },
       {
         icon: this.icons.component,
@@ -215,16 +213,6 @@ export class SidebarComponent implements OnInit {
             route: this.routes[100],
           },
         ],
-      },
-      {
-        icon: this.icons.heart,
-        name: 'Tailwind CSS',
-        route: this.routes[100],
-      },
-      {
-        icon: this.icons.smilePlus,
-        name: 'Icons',
-        route: this.routes[100],
       },
       {
         icon: this.icons.notebookTabs,
