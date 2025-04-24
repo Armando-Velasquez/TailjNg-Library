@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@angular/core';
 import { Params } from '@angular/router';
 import { map, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { ConverterService } from './converter.service';
+import { JConverterService } from './converter.service';
 import { ApiResponse } from './interface/api-response';
 import { API_URL } from './api-url';
 import { JHttpParamsService } from './http-rest.service';
@@ -30,7 +30,7 @@ export class JGenericService {
         @Inject(API_URL) private readonly baseUrl: string,
         private readonly http: HttpClient,
         private readonly HttpParamsService: JHttpParamsService,
-        private readonly converterService: ConverterService,
+        private readonly converterService: JConverterService,
         // private readonly socket: SocketShared,
     ) { }
 

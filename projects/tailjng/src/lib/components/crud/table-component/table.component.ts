@@ -6,7 +6,7 @@ import { Params } from '@angular/router';
 import { JButtonComponent } from '../../button/button.component';
 import { LoadingState, LoadingStates, OptionsTable, SortDirection, TableColumn } from './elements/table.interface';
 import { JCheckboxComponent } from "../../checkbox/checkbox.component";
-import { ConverterService } from '../../../http/converter.service';
+import { JConverterService } from '../../../http/converter.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { JPaginatorComponent } from '../paginator-component/paginator.component';
 import { JFilterComponent } from '../filter-component/filter.component';
@@ -137,7 +137,7 @@ export class JTableComponent implements OnInit {
     private readonly currencyPipe: CurrencyPipe,
     private readonly genericService: JGenericService,
     private readonly alertToastService: JAlertToastService,
-    private readonly converterService: ConverterService,
+    private readonly converterService: JConverterService,
     private readonly calendarService: JCalendarService,
   ) { }
 

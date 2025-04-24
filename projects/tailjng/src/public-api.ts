@@ -46,6 +46,7 @@ export * from './lib/components/alert-dialog/alert-dialog.component';
 
 // Http
 export * from './lib/http/api-url';
+export * from './lib/http/converter.service';
 export * from './lib/http/crud-generic.service';
 export * from './lib/http/http-rest.service';
 export * from './lib/http/http-error.service';
@@ -63,13 +64,15 @@ export * from './lib/colors/theme/theme.component';
 export * from './lib/components/crud/card-component/card.component';
 
 export * from './lib/components/crud/filter-component/filter.component';
+export * from './lib/components/crud/filter-component/elements/filter.interface';
 
 export * from './lib/shared/form.shared';
 export * from './lib/components/crud/form-component/form.component';
+export * from './lib/components/crud/form-component/components/content-form/content-form.component';
+export * from './lib/components/crud/form-component/components/error-message/error-message.component';
 
 export * from './lib/components/crud/paginator-component/paginator.component';
 
 export * from './lib/components/crud/table-component/table.component';
+export * from './lib/components/crud/table-component/elements/table.interface';
 
-// Code block
-export * from './lib/components/code-block/code-block.component';

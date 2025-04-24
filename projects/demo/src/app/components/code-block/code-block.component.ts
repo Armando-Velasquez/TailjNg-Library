@@ -10,7 +10,7 @@ import css from 'highlight.js/lib/languages/css';
 import scss from 'highlight.js/lib/languages/scss';
 import html from 'highlight.js/lib/languages/xml';
 import json from 'highlight.js/lib/languages/json';
-import { JButtonComponent } from '../button/button.component';
+import { JButtonComponent } from '../../../../../tailjng/src/lib/components/button/button.component';
 import { Check, Copy } from 'lucide-angular';
 
 hljs.registerLanguage('ts', typescript);

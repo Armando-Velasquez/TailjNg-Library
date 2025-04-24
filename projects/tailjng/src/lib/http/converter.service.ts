@@ -4,7 +4,7 @@ import { AbstractControl, FormGroup } from '@angular/forms';
 @Injectable({
     providedIn: 'root'
 })
-export class ConverterService {
+export class JConverterService {
 
     constructor() { }
 

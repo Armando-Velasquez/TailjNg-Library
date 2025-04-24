@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { JCodeBlockComponent } from '../../../../../tailjng/src/public-api';
+import { JCodeBlockComponent } from '../../components/code-block/code-block.component';
 
 @Component({
   selector: 'app-tailwind',

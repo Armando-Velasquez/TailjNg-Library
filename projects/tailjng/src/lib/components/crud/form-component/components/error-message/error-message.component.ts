@@ -9,7 +9,7 @@ import { AbstractControl } from '@angular/forms';
   templateUrl: './error-message.component.html',
   styleUrl: './error-message.component.scss'
 })
-export class ErrorMessageComponent {
+export class JErrorMessageComponent {
   @Input() control!: AbstractControl | null;
   @Input() errorMessages: { [key: string]: string } = {};
   @Input() classes: string = '';

@@ -3,7 +3,7 @@ import { CommonModule, CurrencyPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { LucideAngularModule, ChevronUp, ChevronDown, Eye, Edit, Trash, Search, ChevronsUpDown, Check, Loader2, ChevronLeft, ChevronRight } from 'lucide-angular';
 import { Params } from '@angular/router';
-import { ConverterService } from '../../../http/converter.service';
+import { JConverterService } from '../../../http/converter.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { JPaginatorComponent } from '../paginator-component/paginator.component';
 import { JFilterComponent } from '../filter-component/filter.component';
@@ -124,7 +124,7 @@ export class CardComponent implements OnInit {
     private readonly currencyPipe: CurrencyPipe,
     private readonly genericService: JGenericService,
     private readonly alertToastService: JAlertToastService,
-    private readonly converterService: ConverterService,
+    private readonly converterService: JConverterService,
     private readonly calendarService: JCalendarService,
   ) { }
 

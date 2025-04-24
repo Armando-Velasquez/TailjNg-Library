@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { JThemeComponent } from '../../../../../tailjng/src/public-api';
-import { JCodeBlockComponent } from '../../../../../tailjng/src/lib/components/code-block/code-block.component';
+import { JCodeBlockComponent } from '../../components/code-block/code-block.component';
 
 @Component({
   selector: 'app-home',
