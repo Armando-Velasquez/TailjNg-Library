@@ -1,6 +1,6 @@
 {
   "name": "tailjng",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^19.0.0",
     "@angular/core": "^19.0.0",
@@ -20,7 +20,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:css": "postcss \"./projects/tailjng/src/styles/tailjng-theme.css\" -o \"./dist/tailjng/tailjng-theme.css\"",
+    "build:lib": "ng build tailjng",
+    "build": "npm run build:css && npm run build:lib",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -41,7 +43,6 @@
     "highlight.js": "^11.11.1",
     "lucide-angular": "^0.477.0",
     "ngx-cookie-service": "^19.1.2",
-    "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -51,6 +52,7 @@
     "@angular/cli": "^19.2.1",
     "@angular/compiler-cli": "^19.2.0",
     "@types/jasmine": "~5.1.0",
+    "autoprefixer": "^10.4.21",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -58,8 +60,10 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^19.2.0",
+    "postcss": "^8.5.4",
+    "postcss-cli": "^9.1.0",
     "tailwind-merge": "^2.2.0",
-    "tailwindcss": "^4.1.4",
+    "tailwindcss": "^4.1.8",
     "tailwindcss-animate": "^1.0.6",
     "typescript": "~5.7.2"
   }
